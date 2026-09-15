@@ -1,0 +1,9 @@
+D:\Works_Updates\NetSolution\src\SOFCMeas\SOFCMeas\bin\Debug\SOFCMeas.exe.config
+D:\Works_Updates\NetSolution\src\SOFCMeas\SOFCMeas\bin\Debug\SOFCMeas.exe
+D:\Works_Updates\NetSolution\src\SOFCMeas\SOFCMeas\bin\Debug\SOFCMeas.pdb
+D:\Works_Updates\NetSolution\src\SOFCMeas\SOFCMeas\obj\Debug\SOFCMeas.csproj.AssemblyReference.cache
+D:\Works_Updates\NetSolution\src\SOFCMeas\SOFCMeas\obj\Debug\SOFCMeas.Properties.Resources.resources
+D:\Works_Updates\NetSolution\src\SOFCMeas\SOFCMeas\obj\Debug\SOFCMeas.csproj.GenerateResource.cache
+D:\Works_Updates\NetSolution\src\SOFCMeas\SOFCMeas\obj\Debug\SOFCMeas.csproj.CoreCompileInputs.cache
+D:\Works_Updates\NetSolution\src\SOFCMeas\SOFCMeas\obj\Debug\SOFCMeas.exe
+D:\Works_Updates\NetSolution\src\SOFCMeas\SOFCMeas\obj\Debug\SOFCMeas.pdb

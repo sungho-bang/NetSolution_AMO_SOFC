@@ -1,0 +1,45 @@
+# Keep build outputs, deployment files, libraries, images, logs, and artifacts.
+# Ignore only machine-local Visual Studio state and temporary editor files.
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Temporary files created by editors and the operating system.
+*.tmp
+*.temp
+*.swp
+*.orig
+~$*
+Thumbs.db
+Desktop.ini
+
+# Explicitly allow distributable and generated project content.
+!**/bin/
+!**/bin/**
+!**/obj/
+!**/obj/**
+!**/lib/
+!**/lib/**
+!**/libs/
+!**/libs/**
+!**/artifacts/
+!**/artifacts/**
+!**/Data/
+!**/Data/**
+!**/Log/
+!**/Log/**
+!*.exe
+!*.dll
+!*.lib
+!*.pdb
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.bmp
+!*.tif
+!*.tiff
+!*.ico
+!*.webp

@@ -1,0 +1,68 @@
+PASS initial LOT/model/operator fields are editable
+PASS X=60 -> maximum66 and10divisions
+PASS Y10divisions
+PASS peak equals SPEC => GOOD
+PASS judgment peak marker exists
+PASS X automatically expands beyond initial range
+PASS SPEC=0.405 peak=0.407 => GOOD with exact configured threshold
+PASS YMax=2 YAuto=false actual=2
+PASS validated YMin=1 YMax=2 renders without invalid axis
+PASS configuration rejects equal START and END values
+PASS validated Port=12345.0 is canonicalized and reloads as12345
+PASS CSV summary2rows
+PASS CSV kgf3decimals max-width padding
+PASS savedCSV parsing preserves kgf
+PASS review file loads inspection selector
+PASS two rapid file clicks update selector without duplicates
+PASS REVIEW graph correct for inspection1
+PASS select inspection2 updates NG summary and graph together
+PASS REVIEW redraw inspection2
+PASS indexlock leaves committedCSV and durable recoveryjournal, not savefailure
+PASS new service recovers durable pendingindex after lock released
+PASS repeated indexrecovery is idempotent
+PASS retry same save does not create duplicateCSV
+PASS recovered index contains exactly original2 and recovered1 records
+PASS main client height1040
+PASS OPERATOR cannot save settings
+PASS rolling capacity2 after3cycles retains2
+PASS PLC1 events do not change PLC2 list
+PASS rolling removes oldest GOOD
+PASS rolling list=2NG and live summary=2,totalGOOD0,NG2
+PASS LOT save clears own list and returns WaitStart without completiondialog
+PASS PLC1 LOTEND preserves PLC2 buffered result
+PASS LOT end leaves model and LOT fields editable
+DETAIL START button while enabled=START
+PASS simulation completes60samples and1judgment
+PASS simulationcancel does not buffer incomplete inspection
+PASS any registered MAC permits matching adapter
+PASS empty MAC list rejects
+PASS licensevalid until40days
+PASS licenseexpires exactly40days
+PASS license detects backwardclock
+PASS automatic cleanup removes only expired testlogs; testData survives
+PASS cleanup rejects protected Data as deletionroot
+PASS logs save and rotate at size limit
+PASS logs identify both stations/session/sequence
+PASS log failures are tracked without stopping collection
+PASS runtime logfailure displayed as persistent UI warning
+PASS recovered logstorage retains visible failure history
+PASS AutoConnect=false suppresses automatic connection PLC1
+PASS AutoConnect=false suppresses automatic connection PLC2
+PASS manualSTART connects both PLCs with AutoConnect=false
+PASS WAIT_START reads requests but no LOAD_RAW on bothPLCs
+PASS both PLCs collect duringSTART
+PASS EVALUATING blocks samples/raw while otherPLC continues
+PASS SAVING ignores START and LOAD_RAW
+OBSERVED held START from duringSAVING becomes a new cycle immediately on resume (no new edge required)
+PASS softwareSTOP preventsLOAD_RAW
+PASS end-to-end twoTCP PLCs -> WinForms dispatch -> independent GOOD/NG lists
+PASS end-to-end END stops raw reads after automatic judgment
+PASS end-to-end nextSTART resets graph and accepts only newcycle samples
+PASS job fields remain editable while SAVING
+PASS end-to-end delayedLOT save ignores incomingSTART and keeps snapshot unchanged
+PASS LOTEND captures latest metadata; changes during save cannot alter committed header
+PASS edits during save remain available for nextLOT
+PASS CSV and index metadata use the same LOTEND snapshot
+PASS end-to-end LOT save clears only PLC1; PLC2 unchanged
+PASS end-to-end collection resumes afterLOT save (completiondialog disabled in test)
+AUDIT_DONE checks=65 failures=0 reproduced=0

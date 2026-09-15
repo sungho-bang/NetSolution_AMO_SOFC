@@ -1,0 +1,3 @@
+﻿Time,StartedAt,Station,LotNumber,FileName,OperatorName,Result,PeakLoadKgf,LowerSpecKgf,UpperSpecKgf,SampleCount,DataFileName,Message,DataRowNumber
+2026-09-07 17:24:59.830,2026-09-07 17:24:59.827,#1,260827-A01,SOFC_A12,홍길동,NG,0.100000,0.400000,0.400000,1,20260907_172459_260827-A01_SOFC_A12.csv,"검사 완료: PEAK 0.100 kgf / SPEC 0.400 / NG (검사 2, GOOD 1, NG 1, Yield 50.00%)",1
+2026-09-07 17:24:59.834,2026-09-07 17:24:59.832,#1,260827-A01,SOFC_A12,홍길동,NG,0.200000,0.400000,0.400000,1,20260907_172459_260827-A01_SOFC_A12.csv,"검사 완료: PEAK 0.200 kgf / SPEC 0.400 / NG (검사 3, GOOD 1, NG 2, Yield 33.33%)",2

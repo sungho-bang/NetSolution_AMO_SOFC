@@ -1,0 +1,17 @@
+PASS summary labels on first row
+PASS summary values on second row
+PASS blank separator row
+PASS rawdata header uses maximum sample count
+PASS rawdata values stored as kgf
+PASS short rawdata row padded to maximum width
+PASS new two-row summary file loads for review
+PASS summary values restored for review
+PASS kgf values restored without a second scale conversion
+PASS individual review reads new kgf row
+PASS D701 minus sign decodes to negative image load
+PASS ASCII kgf values save unchanged even beyond legacy raw integer range
+PASS ASCII kgf review preserves exact values with large internal raw scale
+PASS legacy integer representation saturates without losing kgf samples
+PASS individual review preserves ASCII kgf beyond legacy raw integer range
+OUTPUT D:\Works_Updates\NetSolution\src\SOFCMeas\artifacts\verify-plc-frame\bin\storage-format-output\Data\PLC1\2026\09\06\20260906_101400_LOT0601_SAMPLE_SOFC_1.csv
+RESULT failures=0

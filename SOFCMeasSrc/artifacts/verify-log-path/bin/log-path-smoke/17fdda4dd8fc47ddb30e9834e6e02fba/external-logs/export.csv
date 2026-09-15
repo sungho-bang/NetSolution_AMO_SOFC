@@ -1,0 +1,2 @@
+﻿Time,StartedAt,Station,LotNumber,FileName,OperatorName,Result,PeakLoadKgf,LowerSpecKgf,UpperSpecKgf,SampleCount,DataFileName,Message,DataRowNumber
+2026-09-09 22:08:19.431,2026-09-09 22:08:18.431,#1,LOG_PATH_TEST,MODEL_TEST,,GOOD,-0.410000,0.000000,0.000000,1,20260909_220819_LOG_PATH_TEST_MODEL_TEST.csv,,1

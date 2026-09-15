@@ -1,0 +1,12 @@
+2026-09-11 11:17:47.439 event=STORAGE_INITIALIZED applicationRoot="D:\\Works_Updates\\NetSolution\\src\\SOFCMeas\\artifacts\\post-stop-plc-root" dataRoot="D:\\Works_Updates\\NetSolution\\src\\SOFCMeas\\artifacts\\post-stop-plc-root\\Data" logRoot="D:\\Works_Updates\\NetSolution\\src\\SOFCMeas\\artifacts\\post-stop-plc-root\\log" retentionDays=30 autoDelete=True maxFileMb=20
+2026-09-11 11:17:47.485 STATION-1 event=PLC_SETTINGS_LOADED station=1 endpoint=172.20.9.100:5000 autoConnect=False pollMs=1000 postStopReadMs=2000 reconnectMs=2000 timeoutMs=3000 loadScale=1000 maxGraphPoints=0 requestDevice=D810 startValue=1 endValue=0 loadRaw=D700 loadWords=5 loadFormat=ASCII_STX_HEADER_SIGN_MAGNITUDE_ETX
+2026-09-11 11:17:47.485 STATION-2 event=PLC_SETTINGS_LOADED station=2 endpoint=172.20.9.101:5000 autoConnect=False pollMs=1000 postStopReadMs=2000 reconnectMs=2000 timeoutMs=3000 loadScale=1000 maxGraphPoints=0 requestDevice=D810 startValue=1 endValue=0 loadRaw=D700 loadWords=5 loadFormat=ASCII_STX_HEADER_SIGN_MAGNITUDE_ETX
+2026-09-11 11:17:47.488 STATION-1 event=PLC_READER_INITIALIZED
+2026-09-11 11:17:47.488 STATION-2 event=PLC_READER_INITIALIZED
+2026-09-11 11:17:47.499 WARN STATION-1 event=PLC_LOAD_DATA_INVALID 알람: PLC 하중 프레임 오류. 샘플 폐기 후 수집 계속. device=D700 words=[12546,8235,11824,12664,816] reason=invalid_magnitude action=discard_sample_continue
+2026-09-11 11:17:47.505 STATION-1 event=READER_STOP_REQUESTED cycle=0 cycleActive=False sampleCount=0
+2026-09-11 11:17:47.506 STATION-1 event=CONNECTION_STATE_CHANGED state=Disconnected endpoint=172.20.9.100:5000
+2026-09-11 11:17:47.508 STATION-1 event=READER_STOPPED connectionAttempts=0 lastCycle=0 lastSampleCount=0
+2026-09-11 11:17:47.508 STATION-2 event=READER_STOP_REQUESTED cycle=0 cycleActive=False sampleCount=0
+2026-09-11 11:17:47.508 STATION-2 event=CONNECTION_STATE_CHANGED state=Disconnected endpoint=172.20.9.101:5000
+2026-09-11 11:17:47.508 STATION-2 event=READER_STOPPED connectionAttempts=0 lastCycle=0 lastSampleCount=0

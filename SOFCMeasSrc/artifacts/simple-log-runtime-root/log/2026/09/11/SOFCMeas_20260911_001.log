@@ -1,0 +1,23 @@
+2026-09-11 11:09:41.730 event=STORAGE_INITIALIZED applicationRoot="D:\\Works_Updates\\NetSolution\\src\\SOFCMeas\\artifacts\\simple-log-runtime-root" dataRoot="D:\\Works_Updates\\NetSolution\\src\\SOFCMeas\\artifacts\\simple-log-runtime-root\\Data" logRoot="D:\\Works_Updates\\NetSolution\\src\\SOFCMeas\\artifacts\\simple-log-runtime-root\\log" retentionDays=30 autoDelete=False maxFileMb=20
+2026-09-11 11:09:41.744 STATION-1 event=PLC_SETTINGS_LOADED station=1 endpoint=172.20.9.100:5000 autoConnect=False pollMs=1000 reconnectMs=2000 timeoutMs=3000 loadScale=1000 maxGraphPoints=0 requestDevice=D810 startValue=1 endValue=0 loadRaw=D700 loadWords=5 loadFormat=ASCII_STX_HEADER_SIGN_MAGNITUDE_ETX
+2026-09-11 11:09:41.744 STATION-2 event=PLC_SETTINGS_LOADED station=2 endpoint=172.20.9.101:5000 autoConnect=False pollMs=1000 reconnectMs=2000 timeoutMs=3000 loadScale=1000 maxGraphPoints=0 requestDevice=D810 startValue=1 endValue=0 loadRaw=D700 loadWords=5 loadFormat=ASCII_STX_HEADER_SIGN_MAGNITUDE_ETX
+2026-09-11 11:09:41.780 STATION-1 event=PLC_READER_INITIALIZED
+2026-09-11 11:09:41.780 STATION-2 event=PLC_READER_INITIALIZED
+2026-09-11 11:09:41.835 SETTINGS event=SPEC_SETTINGS_APPLIED station1Kgf=0.410000 station2Kgf=0.400000
+2026-09-11 11:09:41.853 STATION-1 event=CONNECTION_STATE_CHANGED state=Disconnected endpoint=172.20.9.100:5000
+2026-09-11 11:09:41.856 STATION-1 event=READER_SETTINGS_APPLIED endpoint=172.20.9.100:5000 pollMs=500 reconnectMs=2000 timeoutMs=3000 requestDevice=D810 loadRaw=D710
+2026-09-11 11:09:41.861 STATION-1 event=CONNECTION_STATE_CHANGED state=Disconnected endpoint=172.20.9.100:5000
+2026-09-11 11:09:41.861 WARN STATION-1 event=AUTO_CONNECT_DISABLED autoConnect=false
+2026-09-11 11:09:41.862 STATION-2 event=CONNECTION_STATE_CHANGED state=Disconnected endpoint=172.20.9.101:5000
+2026-09-11 11:09:41.862 STATION-2 event=READER_SETTINGS_APPLIED endpoint=172.20.9.101:5000 pollMs=750 reconnectMs=2000 timeoutMs=3000 requestDevice=D810 loadRaw=D700
+2026-09-11 11:09:41.862 STATION-2 event=CONNECTION_STATE_CHANGED state=Disconnected endpoint=172.20.9.101:5000
+2026-09-11 11:09:41.862 WARN STATION-2 event=AUTO_CONNECT_DISABLED autoConnect=false
+2026-09-11 11:09:41.881 STATION-1 event=PLC_SETTINGS_LOADED station=1 endpoint=172.20.9.100:5000 autoConnect=False pollMs=500 reconnectMs=2000 timeoutMs=3000 loadScale=1000 maxGraphPoints=2 requestDevice=D810 startValue=1 endValue=0 loadRaw=D710 loadWords=5 loadFormat=ASCII_STX_HEADER_SIGN_MAGNITUDE_ETX
+2026-09-11 11:09:41.881 STATION-2 event=PLC_SETTINGS_LOADED station=2 endpoint=172.20.9.101:5000 autoConnect=False pollMs=750 reconnectMs=2000 timeoutMs=3000 loadScale=1000 maxGraphPoints=0 requestDevice=D810 startValue=1 endValue=0 loadRaw=D700 loadWords=5 loadFormat=ASCII_STX_HEADER_SIGN_MAGNITUDE_ETX
+2026-09-11 11:09:41.882 SETTINGS event=MEASUREMENT_SETTINGS_APPLIED simulation=False station1PollMs=500 station2PollMs=750
+2026-09-11 11:09:41.905 STATION-1 event=READER_STOP_REQUESTED cycle=0 cycleActive=False sampleCount=0
+2026-09-11 11:09:41.906 STATION-1 event=CONNECTION_STATE_CHANGED state=Disconnected endpoint=172.20.9.100:5000
+2026-09-11 11:09:41.906 STATION-1 event=READER_STOPPED connectionAttempts=0 lastCycle=0 lastSampleCount=0
+2026-09-11 11:09:41.906 STATION-2 event=READER_STOP_REQUESTED cycle=0 cycleActive=False sampleCount=0
+2026-09-11 11:09:41.906 STATION-2 event=CONNECTION_STATE_CHANGED state=Disconnected endpoint=172.20.9.101:5000
+2026-09-11 11:09:41.906 STATION-2 event=READER_STOPPED connectionAttempts=0 lastCycle=0 lastSampleCount=0

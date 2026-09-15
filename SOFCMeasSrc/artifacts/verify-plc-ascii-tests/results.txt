@@ -1,0 +1,53 @@
+PASS both station defaults use D702
+PASS image D702=11824 D703=12596 D704=816 decodes to 0.410 kgf
+PASS fixture confirms low-byte-first ASCII plus ETX
+PASS negative decimal ASCII value
+PASS full six-byte signed decimal without a terminator
+PASS zero is a valid sample
+PASS NUL-padded decimal ASCII value
+PASS space-padded decimal ASCII value
+PASS STX/ETX framing with trailing NUL
+PASS non-numeric payload is rejected
+PASS comma decimal separator is rejected
+PASS embedded ETX is rejected without joining separated digits
+PASS unexpected payload after ETX is rejected
+PASS exponent notation and NaN are rejected
+PASS byte-swapped image payload is rejected
+PASS empty padded payload is rejected
+PASS missing or wrong-length register block is rejected
+PASS positive legacy raw overflow saturates at Int32.MaxValue
+PASS negative legacy raw overflow saturates at Int32.MinValue
+PASS decoding is invariant to operating-system decimal culture
+PASS invalid first payload still handles START and skips the sample
+PASS valid following payload recovers within the same cycle with original words
+PASS invalid load flag does not suppress END
+PASS station 1 WAIT_START reads D810 without the load block
+PASS station 1 malformed ASCII logs and skips samples while keeping START state
+PASS station 1 recovers 0.410 kgf and raw=820 at scale=2000, preserving all three words
+PASS station 1 malformed ASCII does not restart the connection
+PASS station 1 malformed payload during collection does not insert zero or repeat the previous value
+PASS station 1 END completes the cycle and stops load reads after invalid payload
+PASS station 1 reads exactly D702..D704 as a single three-WORD batch
+PASS station 1 loopback fixture completed without protocol errors
+PASS station 2 WAIT_START reads D810 without the load block
+PASS station 2 malformed ASCII logs and skips samples while keeping START state
+PASS station 2 recovers 0.410 kgf and raw=820 at scale=2000, preserving all three words
+PASS station 2 malformed ASCII does not restart the connection
+PASS station 2 malformed payload during collection does not insert zero or repeat the previous value
+PASS station 2 END completes the cycle and stops load reads after invalid payload
+PASS station 2 reads exactly D730..D732 as a single three-WORD batch
+PASS station 2 loopback fixture completed without protocol errors
+PASS station 1 WAIT_START reads D810 without the load block
+PASS station 1 malformed ASCII logs and skips samples while keeping START state
+PASS station 1 recovers 3.000 kgf and raw=2147483647 at scale=1000000000, preserving all three words
+PASS station 1 malformed ASCII does not restart the connection
+PASS station 1 malformed payload during collection does not insert zero or repeat the previous value
+PASS station 1 END completes the cycle and stops load reads after invalid payload
+PASS station 1 reads exactly D702..D704 as a single three-WORD batch
+PASS station 1 loopback fixture completed without protocol errors
+PASS load display shows original D702/D703/D704 WORDs and decoded kgf
+PASS live graph receives the decoded load
+PASS existing synthetic sample method remains usable
+PASS settingsGrid1 shows the three-WORD range and example without covering the settings grid
+PASS settingsGrid2 shows the three-WORD range and example without covering the settings grid
+ASCII_LOAD_SMOKE_DONE checks=52 failures=0

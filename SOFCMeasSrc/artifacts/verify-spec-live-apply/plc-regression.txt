@@ -1,0 +1,91 @@
+PASS both station defaults use D700
+PASS image D700..D704 decodes STX 1 + space 0.410 ETX to +0.410 kgf
+PASS fixture confirms low-byte-first ASCII with STX, header, sign and ETX
+PASS D701=8237 decodes negative -0.410 kgf
+PASS negative fixture differs only in the sign byte at D701
+PASS positive zero is a valid positive sample
+PASS negative zero retains its sign bit
+PASS six-character magnitude needs no leading padding
+PASS six-character negative magnitude uses the separate sign byte
+PASS integer magnitude with leading ASCII spaces
+PASS full-width integer magnitude
+PASS fractional precision is preserved without additional scale division
+PASS missing STX is rejected with an alarm reason
+PASS reversed framing markers is rejected with an alarm reason
+PASS missing ETX is rejected with an alarm reason
+PASS misplaced STX is rejected with an alarm reason
+PASS misplaced ETX and byte after ETX is rejected with an alarm reason
+PASS unsupported header is rejected with an alarm reason
+PASS missing sign is rejected with an alarm reason
+PASS unsupported sign is rejected with an alarm reason
+PASS non-numeric magnitude is rejected with an alarm reason
+PASS comma decimal separator is rejected with an alarm reason
+PASS exponent notation is rejected with an alarm reason
+PASS NaN is rejected with an alarm reason
+PASS empty magnitude is rejected with an alarm reason
+PASS missing integer digits is rejected with an alarm reason
+PASS missing fractional digits is rejected with an alarm reason
+PASS duplicate decimal point is rejected with an alarm reason
+PASS trailing magnitude padding is rejected with an alarm reason
+PASS embedded space is rejected with an alarm reason
+PASS second minus sign in magnitude is rejected with an alarm reason
+PASS second plus sign in magnitude is rejected with an alarm reason
+PASS tab instead of leading ASCII space is rejected with an alarm reason
+PASS NUL in magnitude is rejected with an alarm reason
+PASS embedded ETX is rejected with an alarm reason
+PASS embedded STX is rejected with an alarm reason
+PASS non-ASCII padding is rejected with an alarm reason
+PASS byte-swapped frame is rejected with an alarm reason
+PASS missing register block is rejected with an alarm reason
+PASS obsolete three-WORD payload is rejected with an alarm reason
+PASS short register block is rejected with an alarm reason
+PASS long register block is rejected with an alarm reason
+PASS positive legacy raw overflow saturates at Int32.MaxValue
+PASS negative legacy raw overflow saturates at Int32.MinValue
+PASS signed decoding is invariant to operating-system decimal culture
+PASS invalid first payload still handles START and skips the sample
+PASS valid following payload recovers within the same cycle with original words
+PASS invalid middle payload is discarded without repeating the preceding sample
+PASS protocol preserves sign when the next valid frame is negative
+PASS invalid load flag does not suppress END
+PASS station 1 WAIT_START reads D810 without the load block
+PASS station 1 malformed ASCII logs and skips samples while keeping START state
+PASS station 1 invalid frame raises a visible warning with reason, address and all five raw WORDs
+PASS station 1 recovers 0.410 kgf and raw=820 at scale=2000, preserving all five words
+PASS station 1 malformed ASCII does not restart the connection
+PASS station 1 malformed payload during collection does not insert zero or repeat the previous value
+PASS station 1 END completes the cycle and stops load reads after invalid payload
+PASS station 1 reads exactly D700..D704 as a single five-WORD batch
+PASS station 1 loopback fixture completed without protocol errors
+PASS station 2 WAIT_START reads D810 without the load block
+PASS station 2 malformed ASCII logs and skips samples while keeping START state
+PASS station 2 invalid frame raises a visible warning with reason, address and all five raw WORDs
+PASS station 2 recovers -0.410 kgf and raw=-820 at scale=2000, preserving all five words
+PASS station 2 malformed ASCII does not restart the connection
+PASS station 2 malformed payload during collection does not insert zero or repeat the previous value
+PASS station 2 END completes the cycle and stops load reads after invalid payload
+PASS station 2 reads exactly D730..D734 as a single five-WORD batch
+PASS station 2 loopback fixture completed without protocol errors
+PASS station 1 WAIT_START reads D810 without the load block
+PASS station 1 malformed ASCII logs and skips samples while keeping START state
+PASS station 1 invalid frame raises a visible warning with reason, address and all five raw WORDs
+PASS station 1 recovers 3.000 kgf and raw=2147483647 at scale=1000000000, preserving all five words
+PASS station 1 malformed ASCII does not restart the connection
+PASS station 1 malformed payload during collection does not insert zero or repeat the previous value
+PASS station 1 END completes the cycle and stops load reads after invalid payload
+PASS station 1 reads exactly D700..D704 as a single five-WORD batch
+PASS station 1 loopback fixture completed without protocol errors
+PASS load display shows original D700..D704 WORDs and explicit positive sign
+PASS live graph receives the decoded load
+PASS load display preserves negative sign and corresponding raw words
+PASS live graph preserves negative sample data
+PASS automatic Y range includes negative samples even with a configured zero minimum
+PASS load display preserves explicit negative zero sign
+PASS negative-only inspection peak remains negative rather than being clamped to zero
+PASS existing synthetic sample method remains usable
+PASS settingsGrid1 shows the five-WORD range and framed signed example without covering the settings grid
+PASS settingsGrid2 shows the five-WORD range and framed signed example without covering the settings grid
+PASS real reader alarm event is persisted through SOFCMeas as a station WARN with complete diagnostic data
+PASS real reader alarm event is appended to the station UI log
+PASS displaying and saving an invalid-frame alarm does not change station running state
+ASCII_LOAD_SMOKE_DONE checks=90 failures=0

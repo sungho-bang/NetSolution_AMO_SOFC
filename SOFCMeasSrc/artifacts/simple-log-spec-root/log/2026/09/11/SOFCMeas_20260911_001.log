@@ -1,0 +1,12 @@
+2026-09-11 11:09:43.172 event=STORAGE_INITIALIZED applicationRoot="D:\\Works_Updates\\NetSolution\\src\\SOFCMeas\\artifacts\\simple-log-spec-root" dataRoot="D:\\Works_Updates\\NetSolution\\src\\SOFCMeas\\artifacts\\simple-log-spec-root\\Data" logRoot="D:\\Works_Updates\\NetSolution\\src\\SOFCMeas\\artifacts\\simple-log-spec-root\\log" retentionDays=30 autoDelete=False maxFileMb=20
+2026-09-11 11:09:43.186 STATION-1 event=PLC_SETTINGS_LOADED station=1 endpoint=172.20.9.100:5000 autoConnect=False pollMs=1000 reconnectMs=2000 timeoutMs=3000 loadScale=1000 maxGraphPoints=0 requestDevice=D810 startValue=1 endValue=0 loadRaw=D700 loadWords=5 loadFormat=ASCII_STX_HEADER_SIGN_MAGNITUDE_ETX
+2026-09-11 11:09:43.186 STATION-2 event=PLC_SETTINGS_LOADED station=2 endpoint=172.20.9.101:5000 autoConnect=False pollMs=1000 reconnectMs=2000 timeoutMs=3000 loadScale=1000 maxGraphPoints=0 requestDevice=D810 startValue=1 endValue=0 loadRaw=D700 loadWords=5 loadFormat=ASCII_STX_HEADER_SIGN_MAGNITUDE_ETX
+2026-09-11 11:09:43.210 STATION-1 event=PLC_READER_INITIALIZED
+2026-09-11 11:09:43.210 STATION-2 event=PLC_READER_INITIALIZED
+2026-09-11 11:09:43.244 SETTINGS event=SPEC_SETTINGS_APPLIED station1Kgf=0.410000 station2Kgf=0.520000
+2026-09-11 11:09:43.252 STATION-1 event=READER_STOP_REQUESTED cycle=0 cycleActive=False sampleCount=0
+2026-09-11 11:09:43.253 STATION-1 event=CONNECTION_STATE_CHANGED state=Disconnected endpoint=172.20.9.100:5000
+2026-09-11 11:09:43.254 STATION-1 event=READER_STOPPED connectionAttempts=0 lastCycle=0 lastSampleCount=0
+2026-09-11 11:09:43.255 STATION-2 event=READER_STOP_REQUESTED cycle=0 cycleActive=False sampleCount=0
+2026-09-11 11:09:43.255 STATION-2 event=CONNECTION_STATE_CHANGED state=Disconnected endpoint=172.20.9.101:5000
+2026-09-11 11:09:43.255 STATION-2 event=READER_STOPPED connectionAttempts=0 lastCycle=0 lastSampleCount=0

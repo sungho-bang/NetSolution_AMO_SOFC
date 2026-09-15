@@ -1,0 +1,58 @@
+REPRODUCED initial LOT/model/operator fields are read-only with no wired editing action
+PASS X=60 -> maximum66 and10divisions
+PASS Y10divisions
+PASS peak equals SPEC => GOOD
+PASS judgment peak marker exists
+PASS X automatically expands beyond initial range
+REPRODUCED SPEC=0.405 peak=0.407 shouldGOOD but actual=NG threshold=0.41
+REPRODUCED YMax=2 YAuto=false actual=0.4
+DETAIL invalid-axis ArgumentException: 간격은 음수일 수 없습니다.
+매개 변수 이름: value
+REPRODUCED validated YMin=1 YMax=2 leads invalid chart axis
+REPRODUCED configuration accepts equal START and END values
+REPRODUCED validated Port=12345.0 reloads as 10000
+PASS CSV summary2rows
+PASS CSV kgf3decimals max-width padding
+PASS savedCSV parsing preserves kgf
+PASS review file loads inspection selector
+PASS two rapid file clicks update selector without duplicates
+PASS REVIEW graph correct for inspection1
+REPRODUCED select inspection2 updates NG summary while graph remains inspection1 until REVIEW
+PASS REVIEW redraw inspection2
+REPRODUCED index lock reports savefailure afterCSV committed; retry duplicates sameLOT
+PASS main client height1040
+PASS OPERATOR cannot save settings
+REPRODUCED manualSTART cannot connect when AutoConnect=false
+PASS rolling capacity2 after3cycles retains2
+PASS PLC1 events do not change PLC2 list
+PASS rolling removes oldest GOOD
+REPRODUCED rolling list=2NG but live summary=3,totalGOOD1
+PASS LOT save clears own list and returns WaitStart without completiondialog
+PASS PLC1 LOTEND preserves PLC2 buffered result
+REPRODUCED LOT end leaves model and LOT fields read-only
+DETAIL START button while enabled=START
+PASS simulation completes60samples and1judgment
+PASS simulationcancel does not buffer incomplete inspection
+PASS any registered MAC permits matching adapter
+PASS empty MAC list rejects
+PASS licensevalid until40days
+PASS licenseexpires exactly40days
+PASS license detects backwardclock
+PASS automatic cleanup removes only expired testlogs; testData survives
+PASS cleanup rejects protected Data as deletionroot
+PASS logs save and rotate at size limit
+PASS logs identify both stations/session/sequence
+REPRODUCED runtime logwrite failure is swallowed and only stored in LastError (only bootstrap observes it)
+PASS WAIT_START reads requests but no LOAD_RAW on bothPLCs
+PASS both PLCs collect duringSTART
+PASS EVALUATING blocks samples/raw while otherPLC continues
+PASS SAVING ignores START and LOAD_RAW
+OBSERVED held START from duringSAVING becomes a new cycle immediately on resume (no new edge required)
+PASS softwareSTOP preventsLOAD_RAW
+PASS end-to-end twoTCP PLCs -> WinForms dispatch -> independent GOOD/NG lists
+PASS end-to-end END stops raw reads after automatic judgment
+PASS end-to-end nextSTART resets graph and accepts only newcycle samples
+PASS end-to-end delayedLOT save ignores incomingSTART and keeps snapshot unchanged
+PASS end-to-end LOT save clears only PLC1; PLC2 unchanged
+PASS end-to-end collection resumes afterLOT save (completiondialog disabled in test)
+AUDIT_DONE checks=41 failures=0 reproduced=12
